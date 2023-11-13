@@ -112,7 +112,6 @@ if st.button("Classify Fetal Health"):
     def health(argument):
         switcher = {
             1: "Normal",
-            st.balloons()
             2: "Suspect",
             3: "Pathological",
         }
