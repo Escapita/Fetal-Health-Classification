@@ -108,4 +108,11 @@ if st.button("Classify Fetal Health"):
             'histogram_tendency': [histogram_tendency]
         }) 
     result = predicts(data)
-    st.text(result) 
+    
+    switcher = {
+        1: "Normal",
+        2: "Suspect",
+        3: "Pathological",
+    }
+
+    st.text(switcher.get(result, 'ERROR')) 
