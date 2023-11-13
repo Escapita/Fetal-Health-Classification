@@ -85,7 +85,7 @@ histogram_tendency = st.number_input("Histogram Tendency", min_value = -1.0, max
 
 if st.button("Classify Fetal Health"):  
     data = pd.DataFrame({
-            'baseline_value': [baseline_value],
+            'baseline value': [baseline_value],
             'accelerations': [accelerations],
             'fetal_movement': [fetal_movement],
             'uterine_contractions': [uterine_contractions],
