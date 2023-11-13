@@ -112,10 +112,11 @@ if st.button("Classify Fetal Health"):
     def health(argument):
         switcher = {
             1: "Normal",
+            st.balloons()
             2: "Suspect",
             3: "Pathological",
         }
         return switcher.get(int(argument), 'ERROR')
 
     st.text(health(result[0])) 
-    st.balloons()
+    
