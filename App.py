@@ -118,3 +118,4 @@ if st.button("Classify Fetal Health"):
         return switcher.get(int(argument), 'ERROR')
 
     st.text(health(result[0])) 
+    st.balloons()
