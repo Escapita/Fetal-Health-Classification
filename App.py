@@ -57,7 +57,7 @@ class CombinedAttributesAdder(BaseEstimator, TransformerMixin):
     else:
       return np.c_[X, rooms_per_household, population_per_household]
 
-st.title("Classification Model")
+st.title("Fetal Health Classification Model")
 
 baseline_value = st.number_input("Baseline Value", max_value = 160.0)
 accelerations = st.number_input("Accelerations", max_value = 0.019)
