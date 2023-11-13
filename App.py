@@ -117,4 +117,4 @@ if st.button("Classify Fetal Health"):
         }
         return switcher.get(argument, 'ERROR')
 
-    st.text(result) 
+    st.text(result[0]) 
