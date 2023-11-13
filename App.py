@@ -109,12 +109,12 @@ if st.button("Classify Fetal Health"):
         }) 
     result = predicts(data)
     
-    def switch(argument):
+    def health(argument):
         switcher = {
             1: "Normal",
             2: "Suspect",
             3: "Pathological",
         }
-        return switcher.get(argument, 'ERROR')
+        return switcher.get(int(argument), 'ERROR')
 
-    st.text(result[0]) 
+    st.text(health(result[0])) 
